@@ -22,6 +22,6 @@ Will generate a guid.
 `guid.py -g`
 
 #### With optional count to generate multiple
-`guid.py --count 10 --generate`
+`guid.py --generate --count 10`
 
-`guid.py -c 10 -g`
+`guid.py -g -c 10`

@@ -44,10 +44,12 @@ def parse():
                 showOptions()
             elif currentArgument in ("-i", "--info"):
                 about()
-            elif currentArgument in ("-g", "--generate"): 
-                generate() 
             elif currentArgument in ("-c", "--count"): 
                 count = int(currentValue)
+        
+        for currentArgument, currentValue in arguments: 
+            if currentArgument in ("-g", "--generate"): 
+                generate() 
                 
     except getopt.error as err: 
         print (str(err)) 
